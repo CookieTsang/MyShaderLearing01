@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Amplify Shader
+  m_Shader: {fileID: 4800000, guid: 0b5617d7ea63c0147879b57fcd0273ea, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 9f8ab2f92d54e3541959237d9bcd4b9d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkyMap:
+        m_Texture: {fileID: 8900000, guid: e71fc492f440446b99875b8e1df890ba, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _EnvironmentReflections: 1
+    - _FX: 0.11
+    - _FZ: 0.16
+    - _Float0: 0.19
+    - _PX: 2
+    - _PZ: 2
+    - _QueueControl: 1
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _SpecularHighlights: 1
+    - _SpeedX: 1
+    - _SpeedX1: 5
+    - _SpeedZ: 1.28
+    - _SpeedZ1: 3
+    - _TessMax: 3
+    - _TessMin: 3
+    - _TessPhongStrength: 0.192
+    - _TessValue: 32
+    - _m: 2
+    m_Colors:
+    - _Color0: {r: 0.14117648, g: 0.23137257, b: 0.3137255, a: 1}
+    - _DistanceSmoothness: {r: 0, g: 1, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Vector1: {r: 0.21, g: 2.66, b: 0.77, a: 0.67}
+    - _WaterBack: {r: 0.41709498, g: 0.6767836, b: 0.7811319, a: 1}
+    - _WaterFace: {r: 0.14653791, g: 0.64585704, b: 0.8396226, a: 1}
+  m_BuildTextureStacks: []
