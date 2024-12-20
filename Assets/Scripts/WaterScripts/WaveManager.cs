@@ -34,10 +34,10 @@ public class WaveManager : MonoBehaviour
     public float GetWaveHeight(float _x, float _z)
     {
         return amplitude * Mathf.Sin(_x / length + offset) * Mathf.Sin(_z / wide + offset);
-        //整个表达式计算了一个基于 _x 和 _z 坐标的波动值，这个波动值会随着位置的不同而变化，并且可以通过调整 amplitude, length, wide, offset 来改变波的形状和位置。
+        //计算基于 _x 和 _z 坐标的波动值，这个波动值会随着位置的不同而变化
+        //通过调整 amplitude, length, wide, offset 来改变波的形状和位置
     }
-  
-
+ 
 
 }
 

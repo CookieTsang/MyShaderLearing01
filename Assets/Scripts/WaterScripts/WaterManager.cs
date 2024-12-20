@@ -24,14 +24,17 @@ public class WaterManager : MonoBehaviour
 
     private void Update()
     {
-        Vector3[] vertices = meshFilter.mesh.vertices; //获取当前网格的顶点数组，类型为Vector3[]（三维坐标数组）。
+        Vector3[] vertices = meshFilter.mesh.vertices; //获取当前网格的顶点数组
         for (int i = 0; i < vertices.Length; i++)
         {
             vertices[i].y = WaveManager.instance.GetWaveHeight(transform.position.x + vertices[i].x, transform.position.z + vertices[i].z);
-         
-   
-
         }
+        meshFilter.mesh.vertices = vertices;
+        meshFilter.mesh.RecalculateNormals();
+
+
+
+
         //循环遍历每个顶点：使用一个for循环遍历所有顶点。
         //更新y坐标：
         //使用假设存在的WaveManager实例中的GetWaveHeight方法计算新的y值。这个方法接受两个参数：
@@ -39,8 +42,6 @@ public class WaterManager : MonoBehaviour
         //transform.position.z + vertices[i].z：计算出完整的世界坐标z。
         //GetWaveHeight返回特定位置的波的高度，这个值将设置为当前顶点的新y坐标。
         //更新网格数据:
-        meshFilter.mesh.vertices = vertices;
-        meshFilter.mesh.RecalculateNormals();
 
     }
 }

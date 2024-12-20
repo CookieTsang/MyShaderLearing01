@@ -1,10 +1,17 @@
 #ifndef __ASD__
 #define __ASD__
-void getFlowNormal_float(float2 uv, UnityTexture2D flowTex, UnityTexture2D normalTex, float4 normalTex_ST,
-    float speed,
-    out float3 flowNormal) {
-    uv *= normalTex_ST.xy;
-    float4 v_flowTex = SAMPLE_TEXTURE2D(flowTex.tex, flowTex.samplerstate, uv) * 2.0 - 1.0;
+void getFlowNormal_float(float2 uv, UnityTexture2D flowTex, UnityTexture2D normalTex, float4 normalTex_ST,float speed,out float3 flowNormal) 
+// 参数：  
+// - float2 uv: 纹理坐标  
+// - UnityTexture2D flowTex: 流动纹理  
+// - UnityTexture2D normalTex: 法线纹理  
+// - float4 normalTex_ST: 用于法线纹理的平移和缩放参数  
+// - float speed: 流动速度  
+// 输出参数：  
+// - out float3 flowNormal: 计算得到的流动法线  
+{
+    uv *= normalTex_ST.xy;// 根据法线纹理的缩放和偏移参数调整 uv 坐标 
+    float4 v_flowTex = SAMPLE_TEXTURE2D(flowTex.tex, flowTex.samplerstate, uv) * 2.0 - 1.0; // 从流动纹理中采样，得到一个范围在 [-1, 1] 的值，并将其存储在 v_flowTex 中 
     float2 flow_dir = v_flowTex.xy;  // uv 扰动方向向量
     float noise = v_flowTex.a;
 
