@@ -1,0 +1,15 @@
+备份
+在水波方面使用多种算法（如Gerstner波、正弦波等）生成多种不同的自然的水波效果,实现基于物理的水面材质，考虑到透明度、反射、折射、光照等物理属性，提高水面的真实感。
+研究适合水面的光照模型，包括菲涅尔效应、粗糙度和反射率的影响。让水面更有画面感，不至于过于单调。
+研究了程序生成的风格化低多边形水面，包含直接使用的浮力组件，直接可用。
+使用LOD调整水面细节，根据一个中心位置和对象的世界坐标来计算细分值，从而影响材质的表现。通过距离和范围的计算，可以实现不同位置上的细节等级变化。
+反射：水面会反射周围环境的景物,实现不同深度的水体，水下阴影的效果。研究模拟泡沫的形成、消散和动态变化，增强水面的表现力。
+![曲面细分与模拟波的结合](https://github.com/user-attachments/assets/ac5a905c-08d3-4b3d-bfa3-6bf51b4354ab)
+![Gerstner波水体2](https://github.com/user-attachments/assets/2972165a-a545-4093-8b26-c7c357092f38)
+![风格化交互水面](https://github.com/user-attachments/assets/eed0beaa-ebac-4bf5-9056-fa3120524192)
+![水面1效果1](https://github.com/user-attachments/assets/ff2bf196-ba3e-4364-9ffb-686d91ef2231)
+![Gerstner波水体2](https://github.com/user-attachments/assets/497f386b-6118-4ba1-87e2-8adfb66140e6)
+![水面2](https://github.com/user-attachments/assets/b0c7fc4a-67e9-4ba1-b2ff-ed3c372d8ee9)
+![水面1效果2](https://github.com/user-attachments/assets/ddfa920b-f8b3-41c3-812b-2cdc8ddc79a6)
+![水面1效果1](https://github.com/user-attachments/assets/8402b77d-5b47-42d3-85e9-d78e43269bea)
+![Gerstner水体1](https://github.com/user-attachments/assets/e5932738-6c04-45c3-bdbf-37410a1aa52a)
